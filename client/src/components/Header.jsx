@@ -47,7 +47,7 @@ function Header() {
               <FaMoon />
             </Button>
             <Link to="/signin">
-              <Button className='bg-purple-600'>
+              <Button className="bg-purple-950" outline>
                 Sign In
               </Button>
             </Link>
