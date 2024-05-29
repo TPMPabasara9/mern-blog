@@ -27,14 +27,14 @@ export const signup = async (req, res, next) => {
 };
 
 export const signin = async (req, res, next) => {
-    const { username, password } = req.body;
+    const { email, password } = req.body;
 
-    if (!username || !password || username === '' || password === '') {
+    if (!email || !password || email === '' || password === '') {
         return next(errorHandler(400, 'All fields are required'));
     }
 
     try {
-        const validUser = await User.findOne({ email: username });
+        const validUser = await User.findOne({email });
         if (!validUser) {
             return next(errorHandler(404, 'User not found'));
         }
