@@ -49,6 +49,7 @@
     "jackspeak": "^2.3.6",
     "jiti": "^1.21.0",
     "js-tokens": "^4.0.0",
+    "jsonwebtoken": "^9.0.2",
     "lilconfig": "^2.1.0",
     "lines-and-columns": "^1.2.4",
     "loose-envify": "^1.4.0",
